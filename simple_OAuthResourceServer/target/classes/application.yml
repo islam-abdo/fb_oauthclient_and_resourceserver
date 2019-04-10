@@ -1,0 +1,16 @@
+server:
+  port: 8445
+  ssl:
+    key-store: classpath:iabdokeystore.jks
+    key-store-password: Average1
+    keyStoreType: jks
+    keyAlias: iabdo
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://graph.facebook.com/me
+    client:
+      client-id: 1990922091019159
+logging:
+  level:
+    org.springframework.security: DEBUG      
